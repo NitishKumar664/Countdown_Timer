@@ -156,14 +156,14 @@ function changeTheme() {
     document.body.className = theme;
 }
 
-// Event listener for the backspace key to cancel the countdown
+// backspace key to cancel the countdown
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Backspace') {
         cancelButton.click();
     }
 });
 
-// Event listener for the space key to pause/resume the countdown
+//  space key to pause/resume the countdown
 document.addEventListener('keydown', (event) => {
     if (event.key === ' ') {
         pauseButton.click();
