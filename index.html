@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="waves.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="setup-slide">
+            <h1 style="margin-top: 150px;">Countdown Timer</h1>
+            <div class="input-group">
+                <label for="target-date">Set Date:</label>
+                <input type="date" id="target-date">
+                <label for="target-time">Set Time:</label>
+                <input type="time" id="target-time">
+                <br><br>
+                <label for="music-select">Select Music:</label>
+                <select id="music-select">
+                    <option value="">Select a music</option>
+                    <option value="1.mp3">Music 1</option>
+                    <option value="2.mp3">Music 2</option>
+                    <option value="3.mp3">Music 3</option>
+                </select>
+                <br><br>
+                <label for="theme-select">Select Theme:</label>
+                <select id="theme-select">
+                    <option value="default">Default</option>
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </select>
+                <br><br>
+                <button id="start-button">Start</button>
+            </div>
+        </div>
+        <div class="countdown-slide">
+            <img src="snake.gif" id="moving-image" alt="Moving Image">
+            <div class="countdown">
+                <div class="circle">
+                    <div class="time-unit">
+                        <span id="days" class="time-value">00</span>
+                        <span>:</span>
+                        <span id="days-label" class="unit-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours" class="time-value">00</span>
+                        <span>:</span>
+                        <span id="hours-label" class="unit-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes" class="time-value">00</span>
+                        <span>:</span>
+                        <span id="minutes-label" class="unit-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds" class="time-value">00</span>
+                        <span id="seconds-label" class="unit-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div class="progress"></div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button id="pause-button">pause</button>
+                <button id="reset-button">Reset</button>
+                
+            </div>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+    <audio id="countdown-audio" src=""></audio>
+
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
